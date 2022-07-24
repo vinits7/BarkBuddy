@@ -1,0 +1,224 @@
+#title {
+    background-color: #C689C6;
+}
+
+.navbar {
+    padding: 0 0 4.2rem;
+}
+
+.navbar-brand {
+    font-family: Ubuntu;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+
+
+.nav-item {
+    font-size: 1.2rem;
+    padding: 0 18px;
+}
+
+body {
+    font-family: Montserrat-Light 300;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.5rem;
+    color: #000;
+    line-height: 1.5;
+    padding: 0 0 18px 0;
+}
+
+.container-fluid {
+    padding: 3% 15% 7%;
+}
+
+/* Download Buttons */
+.download-button {
+    margin: 5% 5% 5% 0;
+}
+
+/* Title image */
+.title-image {
+    width: 60%;
+    transform: rotate(24deg);
+    right: 30%;
+    position: absolute;
+}
+
+
+/* Features section */
+#features {
+    background-color: white;
+    padding: 7% 16%;
+    position: relative;
+    /* z-index: 1                 with or without z-index: 1; desired result is achieved */
+}
+
+/* position: absolute takes an HTML element out of the flow of the document and thus, 
+not stacking and following the natural order and so, #features => position: relative*/
+/* Refer Stacking Order Flowchart */
+/* #features comes later in the HTML flow wrt title-image */
+
+
+.feature-box {
+    padding: 5%;
+    text-align: center;
+}
+
+h3 {
+    font-family: "Montserrat";
+    font-size: 2rem;
+}
+
+p {
+    color: #656585;
+}
+
+.icon {
+    color: #937DC2;
+    margin-bottom: 1rem;
+}
+
+.icon:hover {
+    color: #C689C6;
+}
+
+#testimonials {
+    text-align: center;
+    color: white;
+    background-color: #937DC2;
+
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.4rem;
+    line-height: 1.5;
+}
+
+.testimonial-image {
+    width: 15%;
+    border-radius: 100%;
+    margin: 25px;
+}
+
+#press {
+    background-color: #937DC2;
+    text-align: center;
+    padding: 0 10% 4% 0;
+}
+
+.press-logo {
+    width: 19%;
+    margin: 4.5% 1% 4% 5%;
+}
+
+.carousel-item {
+    padding: 7% 15%;
+}
+
+/*Padding only applied to the testimonials excluding the carousel next and previous icons and thus, not to #testimonials*/
+
+#pricing {
+    text-align: center;
+    padding: 6% 3% 6% 3%;
+}
+
+.pricing-column {
+    padding: 3.5% 2%;
+}
+
+@media(max-width: 992px) {
+    #title {
+        text-align: center;
+    }
+
+    .title-image {
+        position: static;
+        transform: rotate(0deg);
+    }
+}
+
+#cta {
+    background-color: #C689C6;
+    text-align: center;
+    color: white;
+    padding: 10% 21% 7% 21%;
+
+}
+
+.cta-heading {
+    font-size: 2.8rem;
+    padding: 0 0 2% 0;
+}
+
+/* #footer{
+    text-align: center;
+    padding: 7% 18.5% 7% 15%;
+} */
+
+/*could have simply used the content of #footer{} or the following 3 contents of .footer-icon{}, .footer-div{} and .footer-para{}
+for the styling of the footer*/
+
+.footer-icon {
+    color: black;
+    padding: 0 2.4%;
+}
+
+.footer-div {
+    padding: 1.5% 44% 1%;
+}
+
+.footer-para {
+    padding: 0 41%;
+}
+
+
+/* Provide specific custom classes to each of the elements and especially to broad elements like h1{}, p{}, etc.
+
+Use id's sparingly and only mostly for sections and its navigational ability where there is requirement. Prefer using classes more.
+
+Try keeping custom classes names specific and try avoiding multiple classes for same element.
+
+Avoid giving inline style at all costs. Prefer using external stylesheet more.
+
+Club all the similar lines in the collective element like similar padding, text-align: centre (can be put up in body{} so as to 
+avoid writing in almost every element.
+
+ 
+Use Multiple Selectors like => 
+ h1, h2, h3, h4, h5, h6{
+    font-family: "Montserrat-Bold";
+ }
+
+
+Use Hierarchical Selectors like =>
+selector1(parent) selector2(child){}
+(Here, space must be present between selectors => Read from right to left => Parent-Child elements,
+ i.e. child element must be contained inside parent element)
+
+#title .container-fluid{
+    color: red;
+} 
+ => Here, the (child) element that has a class .container-fluid that is 
+ contained inside a parent with an id #title should have the text color red
+
+.container-fluid h1{
+    color: red;
+}
+=> Here, all the h1's which are child of the parent element with class container-fluid should have text color red
+
+
+Use Combined Selectors like =>
+selector1.selector2{}  OR  selector2#selector2{}
+(Here, there is no space between selectors => Read from left to right => Both the selectors are of the same element.)
+
+h1#title{
+    color: red;
+}
+=> Here, h1 that has an id #title should have color red
+
+*/
