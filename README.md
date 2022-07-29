@@ -1,2 +1,2 @@
-# vinits7.github.io
+# BarkBuddy
 Website using HTML, CSS, Bootstrap
